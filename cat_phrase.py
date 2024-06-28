@@ -1,7 +1,18 @@
-phrase = input('Please enter the phrase:')
-print('\t  ' + ('_'* len(phrase)))
-print('\t' + ('< ' + phrase + ' >'))
-print('\t  ' +'-'*len(phrase))
-print('\t /')
-print('\t/')
+def cat_say(text):
+    """Generate a picture of a cat saying something"""
+    text_length = len(text)
+    print('         {}'.format('_'*text_length))
+    print('       < {} >'.format(text))
+    print('         {}'.format('-'*text_length))
+    print('        /')
+    print('       /')
+    print(' /\_/\ ')
+    print('( o.o )')
+    print(' > ^ <')
 
+def main():
+    text = input('What would you like the cat to say? ')
+    cat_say(text)
+
+if __name__ == '__main__':
+    main()
